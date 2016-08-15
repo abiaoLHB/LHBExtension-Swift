@@ -403,6 +403,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "LHBExtension-Swift/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				"OTHER_SWIFT_FLAGS[arch=*]" = "-D DEBUG";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.lhb.company.LHBExtension-Swift";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -484,6 +485,7 @@
 				EFCBF5F71D61A20F00539F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFCBF5F81D61A20F00539F06 /* Build configuration list for PBXNativeTarget "LHBExtension-SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +494,7 @@
 				EFCBF5FA1D61A20F00539F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EFCBF5FB1D61A20F00539F06 /* Build configuration list for PBXNativeTarget "LHBExtension-SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +503,7 @@
 				EFCBF5FD1D61A20F00539F06 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

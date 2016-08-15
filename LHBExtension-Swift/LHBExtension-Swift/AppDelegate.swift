@@ -21,9 +21,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 
 ///全局函数，自定义打印
-
+/*
+ #if DEBUG
+ #endif
+ 配置:Build Settings -  搜索 swift fl -固定格式写 -D (一般命名DEBUG)
+ */
 func LHBPrint<T>(message : T,className : String = #file,funcName : String = #function,lineNum : Int = #line) -> Void{
+    #if DEBUG
     let className = (className as NSString).lastPathComponent.stringByReplacingOccurrencesOfString(".swift", withString:"")
     //print("该类:\(className)---该方法:\(funcName)---行数:\(lineNum)---打印信息:\(message)")
     print("类名:\(className)---行数:\(lineNum)---打印信息:\(message)")
+    #endif
 }
